@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play with JavaScript</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body style="background-color: black;">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span class="brand">😎</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">Roll the Dice</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#exper">Reflex game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#last">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- First page starts here -->
+  <section class="first-page" id="home">
+    <div class="main-page">
+        <h1 id="f_title"><em>Welcome to</em></h1>
+        <h4> <u>Play with JavaScript</u></h4>
+
+        <h5 id ="scroll"> Scroll Down for some exiting games</h5>
+        <a class="icon-clr" href="#aboutme"><i class="fa fa-angle-double-down iconsize" style="font-size: 3em;" aria-hidden="true"></i> </a>
+      
+    </div>
+  </section>
+  
+  <!-- Secon page starts here -->
+  <section class="second-page" id="aboutme">
+    <div class="dice-section">
+      <h1 id="s_title">Get Ready</h1>
+      <img class="img1" id="die-1" src="images/dice1.png">
+      <img class="img1" id="die-2" src="images/dice2.png">
+      <h3 class="some" id="total"><em>Click Below </em> 👇</h3>
+      <button class="d-btn" onclick="roll()"> Roll The Dice</button>
+    
+    </div>
+  </section>
+  
+
+  <!-- Third page start here -->
+  <section class="third-page" id="exper">
+    <div class="reflex-sec">
+      <h1 id="th_title">Reflex Game</h1>
+      <form name="response" class="choose">
+        <span> Choose your background color:</span>
+        <select name="bgColorChange">
+          <option selected>deeppink
+          <option>crimson
+          <option>cadetblue
+          <option>darkorchid
+          <option>chocolate
+          <option>darkslategray
+          <option>cornflowerblue
+        </select>
+  
+      </form>
+      <h2 class="test">Test your Response time!</h2>
+      <h3><em><u>Instructions</u></em></h3>
+      <p>
+        To start the game, click "Start" first, and when the background colour is changing, click on the "Stop" button.
+        </p>
+      
+      <button class="btn" onclick="startit()">Start</button>
+      <button class="btn" onclick="stopTest()">Stop</button>
+      <hr>
+      <h5><em><u>Result</u></em></h5>
+      <p id="result">As soon as you click "Stop"</p>
+    </div>
+  </section>
+
+  <section class="last-page" id="last">
+    <h1 id="ft_title"> Contact Me</h1>
+    <div class="contact-me">
+      <div class="confiled">
+        <h5 class="work-title"> Name</h5>
+        <p class="para-style"><em>Karan Singh Kushwah</em></p>
+      </div>
+  
+      <div class="confiled">
+        <h5 class="work-title"> Address</h5>
+        <p class="para-style"><em> Gwalior, Madhya Pradesh</em></p>
+      </div>
+  
+      <div class="confiled">
+        <h5 class="work-title"> Email</h5>
+        <p class="para-style"><em> kushwah.4@iitj.ac.in</em></p>
+      </div>
+      
+      <div class="info">
+            <a class = "logo" href="https://www.linkedin.com/in/karan-singh-kushwah-475429219/" target="_blank"><i class='fa fa-linkedin red-color'></i></a>
+            <a class = "logo" href="https://github.com/karansinghkushwah1" target="_blank"><i class='fa fa-github red-color'></i></a>
+            <a class = "logo" href="https://www.instagram.com/karanrajawat7021/" target="_blank"><i class='fa fa-instagram red-color'></i></a>
+      </div>
+    </div>
+
+  </section>
+  
+  <footer>
+    <span>Created By Karan with ❤ </span>
+    <span>| © 2022 All rights reserved.</span>
+  </footer>
+
+  <script src="index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,189 @@
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+
+::-webkit-scrollbar {
+    height: 4px;              /* height of horizontal scrollbar ← You're missing this */
+    width: 4px;               /* width of vertical scrollbar */
+    border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #b0b0b0;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: black;
+}
+
+.first-page{
+    padding: 10%;
+    color: white;
+    text-align: center;
+}
+
+#f_title{
+    font-size: 400%;
+}
+
+
+
+#scroll{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: beige;
+}
+
+.icon-clr{
+    color: white;
+}
+
+
+.second-page{
+    background-color: white;
+    margin: 15%;
+    /* padding: 5%; */
+    border-radius: 8px;
+    /* display: flex; */
+}
+
+#s_title{
+    font-size: 400%;
+    margin: 5%;
+    /* padding: 5%; */
+}
+
+.img1{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+.dice-section{
+    /* width: 90%; */
+    text-align: center;
+    /* align-items: center; */
+}
+
+.d-btn{
+    background-color: brown;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 0;
+    width: 150px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10%;
+    margin-top: 4%;
+}
+
+some{
+    /* margin-bottom: 3%; */
+    margin-top: 6%;
+}
+
+.shake{
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0%{
+        transform: rotate(16deg);
+    }
+    50%{
+        transform: rotate(-16deg);
+    }
+    100%{
+        transform: rotate(16deg);
+    }
+    
+}
+
+.para1{ 
+    color: cyan;
+    text-decoration: antiquewhite;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.third-page{
+    background-color: white;
+    margin: 15%;
+    /* padding: 5%; */
+    border-radius: 8px;
+    text-align: center;
+}
+
+#th_title{
+    font-size: 400%;
+    margin: 5%;
+}
+
+.test{
+    color: grey;
+}
+.btn{
+    color: white;
+    padding: 15px 0;
+    width: 150px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+.choose{
+    font-size: 100%;
+    padding: 3%;
+}
+
+#result{
+    padding: 0 5px;
+}
+
+.last-page{
+    background-color: white;
+    margin: 15%;
+    /* padding: 5%; */
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+#ft_title{
+    font-size: 400%;
+    margin: 10%;
+}
+
+.logo{
+    margin: 1%;
+    color: black;
+}
+
+footer{
+    background-color: black;
+    color: #f1f1f1;
+    height: 60px;
+    text-align: center;
+    padding: 12px; 
+}
