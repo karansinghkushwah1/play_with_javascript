@@ -161,13 +161,67 @@ some{
     padding: 0 5px;
 }
 
+.fourth-page{
+    background-color: white;
+    margin: 15%;
+    /* padding: 5%; */
+    border-radius: 8px;
+    text-align: center;
+}
+
+#level-title {
+    font-size: 350%;
+    margin: 5%;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+  
+}
+
+.btnf {
+    margin: 2%;
+    display: inline-block;
+    height: 9rem;
+    width: 9rem;
+    border: 5px solid black;
+    border-radius: 20%;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pressed{
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
 .last-page{
     background-color: white;
     margin: 15%;
     /* padding: 5%; */
     border-radius: 8px;
     text-align: center;
-
 }
 
 #ft_title{
